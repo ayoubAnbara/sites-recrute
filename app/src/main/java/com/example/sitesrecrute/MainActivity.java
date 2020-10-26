@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 new Site(8,"jobs.atos.net","https://jobs.atos.net/?locale=en_US&logout=true"),
                 new Site(9,"orange.jobs","https://orange.jobs/site/ma-orangemaroc/index.htm"),
                 new Site(10,"sqli-carrieres.com","https://www.sqli-carrieres.com/"),
-                new Site(11,"charikates.ma","https://charikates.ma/")
+                new Site(11,"charikates.ma","https://charikates.ma/"),
+            new Site(12,"https://ma.jora.com/D%C3%A9veloppeur-Java-emplois")
         );
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
