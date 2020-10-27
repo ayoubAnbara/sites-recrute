@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 new Site(9,"orange.jobs","https://orange.jobs/site/ma-orangemaroc/index.htm"),
                 new Site(10,"sqli-carrieres.com","https://www.sqli-carrieres.com/"),
                 new Site(11,"charikates.ma","https://charikates.ma/"),
-            new Site(12,"https://ma.jora.com/D%C3%A9veloppeur-Java-emplois")
+            new Site(12,"https://ma.jora.com/D%C3%A9veloppeur-Java-emplois"),
+            https://www.novancy.com/jobs
         );
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
