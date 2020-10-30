@@ -1,4 +1,4 @@
-package com.example.sitesrecrute;
+package com.sites.recrute;
 
 import android.content.Context;
 

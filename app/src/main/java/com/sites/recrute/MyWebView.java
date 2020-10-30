@@ -1,4 +1,4 @@
-package com.example.sitesrecrute;
+package com.sites.recrute;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,13 +11,12 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-public class MyWebView extends AppCompatActivity  {
+public class MyWebView extends AppCompatActivity {
     String SITE;
-  public   WebView myWebView;
+    public WebView myWebView;
     ProgressBar progressBar;
 
     @Override
@@ -30,7 +29,7 @@ public class MyWebView extends AppCompatActivity  {
 
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.custom_toolbar);
-        Button toolbar_btn = getSupportActionBar().getCustomView().findViewById(R.id.toolbar_btn);
+        ImageView toolbar_btn = getSupportActionBar().getCustomView().findViewById(R.id.toolbar_btn);
         toolbar_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,13 +44,24 @@ public class MyWebView extends AppCompatActivity  {
             public void onClick(View v) {
                 Intent i = new Intent(MyWebView.this, MainActivity.class);
                 startActivity(i);
+                //finish();
+
+            }
+        });
+        ImageView reload = getSupportActionBar().getCustomView().findViewById(R.id.reload);
+        reload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
+                myWebView.reload();
+
 
             }
         });
 
 
         progressBar = findViewById(R.id.progress_bar);
-        myWebView = (WebView) findViewById(R.id.webview);
+        myWebView =  findViewById(R.id.webview);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         myWebView.loadUrl(SITE);
@@ -70,18 +80,19 @@ public class MyWebView extends AppCompatActivity  {
         return super.onKeyDown(keyCode, event);
     }
 
- class MyWebViewClient extends WebViewClient {
-    @Override
-    public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        view.loadUrl(url);
-        return true;
+    class MyWebViewClient extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            view.loadUrl(url);
+            return true;
+        }
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            progressBar.setVisibility(View.GONE);
+
+
+        }
     }
-     @Override
-     public void onPageFinished(WebView view, String url) {
-         progressBar.setVisibility(View.GONE);
-
-
-     }
-}
 }
 

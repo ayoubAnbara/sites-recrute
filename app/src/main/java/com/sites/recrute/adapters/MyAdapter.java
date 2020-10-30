@@ -1,4 +1,4 @@
-package com.example.sitesrecrute.adapters;
+package com.sites.recrute.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,12 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.sitesrecrute.MyWebView;
-import com.example.sitesrecrute.R;
-import com.example.sitesrecrute.model.Site;
+import com.sites.recrute.MyWebView;
+import com.sites.recrute.R;
+import com.sites.recrute.model.Site;
 import com.preference.PowerPreference;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

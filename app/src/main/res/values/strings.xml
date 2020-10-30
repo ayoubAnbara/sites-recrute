@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">sites recrute</string>
+    <string name="app_name">Recrutement Dev</string>
+    <string name="url_pravicy">https://sites.google.com/view/sites-recrute/home</string>
 </resources>

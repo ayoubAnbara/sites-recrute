@@ -1,4 +1,4 @@
-package com.example.sitesrecrute.Interface;
+package com.sites.recrute.Interface;
 
 import android.view.View;
 

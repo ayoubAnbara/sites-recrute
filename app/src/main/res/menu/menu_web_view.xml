@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/rateUs"
+        android:title="rate us"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/code_source"
+        android:title="code source"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/privacy_policy"
+        android:title="privacy policy"
+        app:showAsAction="never"
+        />
+
+</menu>

@@ -1,4 +1,4 @@
-package com.example.sitesrecrute.model;
+package com.sites.recrute.model;
 
 public class Site {
     private long id;
