@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 new Site(13, "cgi.com", "https://www.cgi.com/fr/carrieres-recherche?country_id=388&job_type_id=&category_id=34"),
                 new Site(14, "jobrapido.com", "https://ma.jobrapido.com/?w=d%c3%a9veloppeur&l=maroc&r=auto&shm=all"),
                 new Site(15, "neuvoo.co.ma", "https://neuvoo.co.ma/emplois/"),
-                new Site(16, "charikates.ma", "https://charikates.ma/")
+                new Site(16, "emploi.ma", "https://www.emploi.ma/recherche-jobs-maroc/?f%5B0%5D=im_field_offre_metiers%3A31"),
+                new Site(17, "charikates.ma", "https://charikates.ma/")
                 //  new Site(17, "google", "https://www.google.com/search?sxsrf=ALeKk02GMLWQGfgr1xmzlpOHtDMcrRqy3A:1604080549244&ei=pVOcX-nMDtCU8gLywpXIAw&q=developpeur+&oq=sites+recrute&gs_lcp=CgZwc3ktYWIQAzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIECAAQEzIICAAQChAeEBMyCAgAEAUQHhATMggIABAFEB4QEzIICAAQBRAeEBM6BAgAEEdQjSBYjSBgnCRoAHACeACAAbQBiAG0AZIBAzAuMZgBAKABAaoBB2d3cy13aXrIAQPAAQE&sclient=psy-ab&uact=5&ibp=htl;jobs&sa=X&ved=2ahUKEwjNjLLd8dzsAhXUlFwKHX4mBmAQiYsCKAJ6BAgMEBA&sxsrf=ALeKk03XyKFTrq4I8tBpn6iAjbvL9j1BSQ:1604080555041#fpstate=tldetail&htivrt=jobs&htidocid=NDvr2E6_I-mA7Yp_AAAAAA%3D%3D")
 
         );
